@@ -1,0 +1,736 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/imageslider.css">
+    <!-- <link rel="stylesheet" href="css/cart.css"> -->
+
+    <!-- fontawesome icons -->
+    <script src="https://kit.fontawesome.com/9f50c50a18.js" crossorigin="anonymous"></script>
+    <!-- fontawesome ends -->
+
+    <!-- Storyset illustrations -->
+    <!-- <a href="https://storyset.com/knowledge">Knowledge illustrations by Storyset</a> -->
+
+    <title>Bookish Kida</title>
+</head>
+
+<body>
+    <button id="BackToTop"><i class="fas fa-arrow-circle-up"></i></button>
+    <!-- navbar starts from here -->
+    <nav class="navbar universal-padding">
+        <div class="part-1">
+            <!-- <h3 class="logo">Bookish Kida</h3> -->
+            <img src="images/Logo.png" alt="">
+        </div>
+        <div class="part-2">
+            <ul class="navlist">
+                <li><a href="#">Home</a></li>
+                <li><a href="#categoriessection">Categories</a></li>
+                <li><a href="#blogs_section">Blogs</a></li>
+                <li><a href="#review_section">Reviews</a></li>
+                <li><a href="#">Founder</a></li>
+            </ul>
+        </div>
+
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+
+        <div class="part-3">
+            <ul class="icons">
+                <li>
+                    <div id="menu-btn" class="fas fa-bars"></div>
+                </li>
+
+                <!-- <li id="search-btn"><a href="#"><i class="fas fa-search"></i></a></li> -->
+                <li id="search-btn"><i class="fas fa-search"></i></li>
+
+                <!-- <li id="bookshelf"><a href="Bookshelf.html" target="_blank"><i class="fas fa-book"></i></a> -->
+                <li id="bookshelf"><a href="cart.html" target="_blank"><i class="fas fa-book"></i><span>0</span></a>
+                    <!--<span class="tooltiptext-1">Book Shelf</span>-->
+                </li>
+
+                <!-- <li id="login-btn"><a href="#"><i class="fas fa-user-circle"></i></a> -->
+                <li id="login-btn"><i class="fas fa-user-circle"></i>
+                    <!--<span class="tooltiptext">Login or Sign Up</span>-->
+                </li>
+
+                <!-- <li id="cart-info" class="nav-info align-items-center cart-info d-flex justify-content-between mx-lg-5">
+                    <span class="cart-info__icon mr-lg-3"><i class="fas fa-trash"></i></span>
+                </li> -->
+
+                <!-- <li id="nightmode"><a href="#"><i class="fas fa-moon"></i></a>
+                </li> -->
+            </ul>
+        </div>
+
+
+        <!-- <div class="login-form-container"> -->
+        <!-- Button to close login form -->
+        <!-- <div id="close-login-btn" class="fas fa-times"></div> -->
+        <!-- Actual login form -->
+        <form action="" class="login-form">
+            <div id="close-login-btn" class="fas fa-times"></div>
+            <h3>Login</h3>
+            <input type="email" class="box" placeholder="Enter your email">
+            <input type="password" class="box" placeholder="Enter your password">
+            <div class="remember">
+                <input type="checkbox" id="remember-me">
+                <label for="remember-me">Remember Me</label>
+            </div>
+            <input type="submit" value="Login Now" class="btn">
+            <p>Forget Password? <a href="#">Click Here</a></p>
+            <p>Don't have an account <a href="#">Create one!</a></p>
+        </form>
+
+        <!-- </div> -->
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Enter Book Name or Author Name...">
+            <label for="search-box" class="fas fa-search"></label>
+        </form>
+
+    </nav>
+    <!-- navbar ends here -->
+
+    <!-- image slider starts from here -->
+
+    <section class="imageslider-container universal-padding">
+
+        <div class="home-slider">
+            <div class="w">
+                <section class="slide active" id="content1">
+                    <div class="content">
+                        <h3>Featured Book of January</h3>
+                        <p>Sale up to <span>30% off</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quibusdam?</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="imgforslider">
+                        <img src="images/Agnipankh.jpg" alt="Book Image">
+                    </div>
+                </section>
+
+                <section class="slide" id="content2">
+                    <div class="content">
+                        <h3>Featured Book of January</h3>
+                        <p>Sale up to <span>30% off</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quibusdam?</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="imgforslider">
+                        <img src="images/Albert Einstein.jpg" alt="Book Image">
+                    </div>
+                </section>
+
+                <section class="slide" id="content3">
+                    <div class="content">
+                        <h3>Featured Book of January</h3>
+                        <p>Sale up to <span>30% off</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quibusdam?</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="imgforslider">
+                        <img src="images/Cook Book.jpg" alt="Book Image">
+                    </div>
+                </section>
+
+                <section class="slide" id="content4">
+                    <div class="content">
+                        <h3>Featured Book of January</h3>
+                        <p>Sale up to <span>30% off</span></p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. A, quibusdam?</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="imgforslider">
+                        <img src="images/Shyamchi Aai.jpg" alt="Book Image">
+                    </div>
+                </section>
+
+            </div>
+        </div>
+
+        <div class="dot-container">
+            <button onclick="dot(1)"></button>
+            <button onclick="dot(2)"></button>
+            <button onclick="dot(3)"></button>
+            <button onclick="dot(4)"></button>
+        </div>
+
+        <button id="prev" onclick="prev()"> &lt; </button>
+        <button id="next" onclick="next()"> &gt; </button>
+
+        <div class="navigation-auto">
+            <div class="auto-btn1"></div>
+            <div class="auto-btn2"></div>
+            <div class="auto-btn3"></div>
+            <div class="auto-btn4"></div>
+        </div>
+
+    </section>
+
+    <!-- image slider ends here -->
+
+
+    <!-- Why us section starts here -->
+
+    <section class="why-us universal-padding">
+        <div class="common-why-us">
+            <i class="fas fa-shipping-fast"></i>
+            <h3>Fastest Delivery</h3>
+        </div>
+
+        <div class="common-why-us">
+            <i class="fas fa-rupee-sign"></i>
+            <h3>Affordable Price</h3>
+        </div>
+
+        <div class="common-why-us">
+            <i class="fas fa-undo-alt"></i>
+            <h3>Easy Returns</h3>
+        </div>
+
+        <div class="common-why-us">
+            <i class="fas fa-exchange-alt"></i>
+            <h3>Easy Exchange</h3>
+        </div>
+    </section>
+
+
+    <!-- <i class="fas fa-shipping-fast"></i> fastest delivery -->
+    <!-- <i class="fas fa-rupee-sign"></i> Affordable price -->
+    <!-- <i class="fas fa-undo-alt"></i> easy returns -->
+    <!-- <i class="fas fa-exchange-alt"></i> easy exchange -->
+
+    <!-- Why us section ends here -->
+
+    <!-- Category section starts here -->
+
+    <section class="book-categories universal-padding" id="categoriessection">
+        <h1 class="common-for-heading">Categories</h1>
+
+        <div class="combo">
+            <div class="engineering commonforbookcate">
+                <a href="#engi_book"><img src="images/Engineering.png" alt="Engineering Book"></a>
+                <h3>Engineering Books</h3>
+            </div>
+            <div class="science commonforbookcate">
+                <a href="#sci_book"><img src="images/Science.png" alt="Science Book"></a>
+                <h3>Science Books</h3>
+            </div>
+            <div class="biography commonforbookcate">
+                <a href="#bio_book"><img src="images/Biography.png" alt="Biographies"></a>
+                <h3>Biographies</h3>
+            </div>
+
+            <div class="recipe commonforbookcate">
+                <a href="#"><img src="images/Recipe.png" alt="Cooking/Recipe Book"></a>
+                <h3>Cooking/Recipe Books</h3>
+            </div>
+            <div class="poetry commonforbookcate">
+                <a href="#"><img src="images/Poetry.png" alt="Poetry Book"></a>
+                <h3>Poetry Books</h3>
+            </div>
+            <div class="compexam commonforbookcate">
+                <a href="#"><img src="images/Competative Exam.png" alt="Competative Exam Book"></a>
+                <h3>Competative Exam Books</h3>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Category section ends here -->
+
+    <!-- EngineeringBooks section starts here -->
+
+    <section class="engineering-books universal-padding" id="engi_book">
+        <h1 class="common-for-heading">Engineering Books</h1>
+
+        <div class="engi_combo">
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/C in depth.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a class="book_btn cart_button" href="#">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/C in depth.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/C in depth.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/C in depth.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/C in depth.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/C in depth.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- EngineeringBooks section ends here -->
+
+    <!-- ScienceBooks section starts here -->
+
+    <section class="engineering-books universal-padding" id="sci_book">
+        <h1 class="common-for-heading">Science Books</h1>
+
+        <div class="engi_combo">
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Science Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Science Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Science Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Science Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Science Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Science Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- ScienceBooks section ends here -->
+
+    <!-- BiographyBooks section starts here -->
+
+    <section class="engineering-books universal-padding" id="bio_book">
+        <h1 class="common-for-heading">Biographies</h1>
+
+        <div class="engi_combo">
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Biography Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Biography Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Biography Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Biography Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Biography Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+
+            <div class="book_box">
+                <div class="image">
+                    <img src="images/Biography Book.jpg" alt="book">
+                </div>
+                <div class="content">
+                    <h3>Book Name</h3>
+                    <div class="price">&#8377 280 <span>&#8377 350</span></div>
+                    <a href="#" class="book_btn cart_button">Add to Bookshelf&nbsp;&nbsp;<i class="fas fa-book"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- BiographyBooks section ends here -->
+
+    <!-- Blogs section starts from here -->
+
+    <section class="blogs universal-padding" id="blogs_section">
+        <h1 class="common-for-heading">Our Blogs</h1>
+        <div class="blog_combo">
+            <div class="blog_box">
+                <div class="blog_image">
+                    <img src="images/Book2.jpg" alt="">
+                </div>
+                <div class="blog_content">
+                    <h3>Blog title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint facilis qui cupiditate
+                        odit voluptate.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog_box">
+                <div class="blog_image">
+                    <img src="images/Book3.jpg" alt="">
+                </div>
+                <div class="blog_content">
+                    <h3>Blog title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint facilis qui cupiditate
+                        odit voluptate.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+
+            <div class="blog_box">
+                <div class="blog_image">
+                    <img src="images/Book4.jpg" alt="">
+                </div>
+                <div class="blog_content">
+                    <h3>Blog title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur sint facilis qui cupiditate
+                        odit voluptate.</p>
+                    <a href="#">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs section ends here -->
+
+    <!-- Reviews section starts here -->
+
+    <section class="reviews universal-padding" id="review_section">
+        <h1 class="common-for-heading">Reviews</h1>
+
+        <div class="reviews_combo">
+            <div class="review_box">
+                <img src="images/customer.jpg" alt="customer">
+                <h3>Customer name</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla ex cumque saepe perspiciatis
+                    esse cupiditate, hic corrupti beatae aliquam?</p>
+
+                <div class="reviews_stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="review_box">
+                <img src="images/customer.jpg" alt="customer">
+                <h3>Customer name</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla ex cumque saepe perspiciatis
+                    esse cupiditate, hic corrupti beatae aliquam?</p>
+
+                <div class="reviews_stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="review_box">
+                <img src="images/customer.jpg" alt="customer">
+                <h3>Customer name</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla ex cumque saepe perspiciatis
+                    esse cupiditate, hic corrupti beatae aliquam?</p>
+
+                <div class="reviews_stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="review_box">
+                <img src="images/customer.jpg" alt="customer">
+                <h3>Customer name</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla ex cumque saepe perspiciatis
+                    esse cupiditate, hic corrupti beatae aliquam?</p>
+
+                <div class="reviews_stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </div>
+            </div>
+
+            <div class="review_box">
+                <img src="images/customer.jpg" alt="customer">
+                <h3>Customer name</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla ex cumque saepe perspiciatis
+                    esse cupiditate, hic corrupti beatae aliquam?</p>
+
+                <div class="reviews_stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="review_box">
+                <img src="images/customer.jpg" alt="customer">
+                <h3>Customer name</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla ex cumque saepe perspiciatis
+                    esse cupiditate, hic corrupti beatae aliquam?</p>
+
+                <div class="reviews_stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="review_box">
+                <img src="images/customer.jpg" alt="customer">
+                <h3>Customer name</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla ex cumque saepe perspiciatis
+                    esse cupiditate, hic corrupti beatae aliquam?</p>
+
+                <div class="reviews_stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+
+            <div class="review_box">
+                <img src="images/customer.jpg" alt="customer">
+                <h3>Customer name</h3>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi nulla ex cumque saepe perspiciatis
+                    esse cupiditate, hic corrupti beatae aliquam?</p>
+
+                <div class="reviews_stars">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- Reviews section ends here -->
+
+    <!-- Footer section starts from here -->
+
+    <section class="footer">
+        <div class="box-container universal-padding">
+            <div class="box">
+                <h3>Our Locations</h3>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> India</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> USA</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Russia</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> France</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Japan</a>
+                <a href="#"><i class="fas fa-map-marker-alt"></i> Africa</a>
+            </div>
+
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> Home</a>
+                <a href="#categoriessection"><i class="fas fa-angle-right"></i> Categories</a>
+                <a href="#blogs_section"><i class="fas fa-angle-right"></i> Blogs</a>
+                <a href="#review_section"><i class="fas fa-angle-right"></i> Reviews</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Founder</a>
+            </div>
+
+            <div class="box">
+                <h3>Extra Links</h3>
+                <a href="#"><i class="fas fa-angle-right"></i> Account Info</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Ordered Items</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Privacy Policy</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Payment Method</a>
+                <a href="#"><i class="fas fa-angle-right"></i> Our Services</a>
+            </div>
+
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#"><i class="fas fa-phone"></i> +123-456-7890</a>
+                <a href="#"><i class="fas fa-phone"></i> +91 9988776655</a>
+                <a href="#"><i class="fas fa-envelope"></i> bookishkida@gmail.com</a>
+            </div>
+        </div>
+
+        <div class="share">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin"></i></a>
+            <a href="#"><i class="fab fa-pinterest"></i></a>
+        </div>
+
+        <div class="credit universal-margin">Created By <span>Tushar Borawake</span> | All rights reserved &copy; 2022
+        </div>
+    </section>
+
+    <!-- Footer section ends here -->
+
+    <!-- Cart starts here -->
+    <!-- <table>
+        <tbody>
+            <tr>
+                <td><input type="checkbox" name="" id=""></td>
+                <td><img src="" alt="" srcset="">image of item</td>
+                <td>
+                    <h3>name of item</h3>
+                </td>
+                <td>
+                    <h3>price of item</h3>
+                </td>
+                <td><input type="number" name="" id="" style="border: 2px solid black;">1</td>
+                <td>total price if item</td>
+                <td><i class="fa-solid fa-trash-can" style="color: red; font-size: 20px; z-index: 1000;"></i></td>
+                <td><button>Remove</button></td>
+            </tr>
+        </tbody>
+    </table> -->
+
+   
+
+    <!-- Cart ends Here -->
+
+
+    <!-- <i class="fas fa-sun"></i> -->
+    <script src="js/script.js"></script>
+    <script src="js/cart.js"></script>
+</body>
+
+</html>
