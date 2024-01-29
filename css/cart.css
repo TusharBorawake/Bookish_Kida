@@ -1,0 +1,116 @@
+.products-container{
+    max-width: 85rem;
+    justify-content: space-around;
+    margin: 0 auto;
+    margin-top: 5rem;
+    /* border: 2px solid red; */
+    /*Below*/
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap; */
+    /* padding-bottom: 10rem; */
+}
+
+/* .products{
+    display: flex;
+    border: 2px solid blue;
+} */
+
+.products-container i{
+    font-size: 2.5rem;
+    color: green;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.combo-of-each-product{
+    display: flex;
+}
+
+.product img{
+    width: 50%;
+}
+
+.product-header{
+    width: 100%;
+    max-width: 85rem;
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    border-bottom: .4rem solid lightgray;
+    margin: 0 auto;
+}
+
+.product-title{
+    width: 45%;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price{
+    width: 25%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    /* border-bottom: .4rem solid blue; */
+}
+
+.quantity{
+    width: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    /* border-bottom: .4rem solid mediumspringgreen; */
+}
+
+.quantity span{
+    padding: 0 .5rem;
+}
+
+.total{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    /* border-bottom: .4rem solid brown; */
+}
+
+.product{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1rem 0;
+    font-size: 2rem;
+    /* border: 2px solid black; */
+}
+
+.basketTotalContainer{
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 2rem;
+    border-top: .4rem solid lightgray;
+    /* border: 2px solid black; */
+}
+
+.basketTotalTitle{
+    width: 30%;
+    font-size: 2rem;
+    /* border: 2px solid black; */
+}
+
+
+.basketTotal{
+    width: 10%;
+    font-size: 2rem;
+    /* border: 2px solid black; */
+}
+
+

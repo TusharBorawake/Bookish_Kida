@@ -1,0 +1,222 @@
+/*Backgrounds for image-slider*/
+
+#content1{
+    background: url('../images/bg1.jpg');
+    background-repeat: no-repeat;
+}
+
+#content2{
+    background: url('../images/bg2.jpg');
+    background-repeat: no-repeat;
+}
+
+#content3{
+    background: url('../images/bg3.jpg');
+    background-repeat: no-repeat;
+}
+
+#content4{
+    background: url('../images/bg4.jpg');
+    background-repeat: no-repeat;
+}
+
+/**/
+
+.imageslider-container{
+    position: relative;
+    /* box-shadow: 10px 10px 8px 10px #888888; */
+}
+
+
+.image-container{
+    position: relative;
+    /* margin-top: 4px; */
+    /* padding: 10px; */
+    /* border: 2px solid grey;
+    border-radius: 5px; */
+}
+
+/* .imageslider-container .image-container{ */
+    /* border: 5px solid red; */
+    /* padding: 10px;
+} */
+
+/* .imageslider-container .image-container img{
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+.imageslider-container .image-container .active{
+    display: block;
+} */
+
+
+.imageslider-container{
+    padding: 0;
+}
+
+.imageslider-container .slide{
+    min-height: 60rem; /*600px = 60rem*/
+    /* display: flex; */
+    display: none;
+    align-items: center;
+    position: relative;
+    background-size: cover !important;
+    background-position: center !important;
+    /* padding-left: 8rem; */
+    color: white;
+    /* padding-left: 5rem; */
+}
+
+.imageslider-container .slide.active{
+    display: flex;
+}
+
+.imageslider-container .slide::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    /* background: linear-gradient(90deg, white, transparent); */
+}
+
+.imageslider-container .slide .content{
+    width: 50%;
+    padding-left: 8rem;
+}
+
+.imageslider-container .slide .imgforslider{
+    width: 50%;
+    text-align: center;
+}
+
+.imageslider-container .slide .content h3{
+    font-size: 6rem;
+}
+
+.imageslider-container .slide .content p{
+    font-size: 4rem;
+    margin-bottom: 4rem;
+}
+
+.imageslider-container .slide .content p span{
+    color: white;
+    background-color: rgb(255, 187, 0);
+    padding: .3rem 1rem;
+    border-radius: .5rem;
+    /* font-weight: 200; */
+}
+
+.imageslider-container .slide .content .btn{
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+
+.imageslider-container .slide .content .btn:hover{
+    background-color: white;
+    color: rgb(255, 187, 0);
+}
+
+.imageslider-container .slide .imgforslider{
+    height: 40rem;
+    /* padding-right: 8rem; */
+}
+
+.imageslider-container .slide .imgforslider img{
+    border-radius: .7rem;
+    height: 40rem;
+    animation: floating 4s linear infinite;
+}
+
+@keyframes floating{
+    0%, 100%{
+        transform: translateY(0rem);
+    }
+    50%{
+        transform: translateY(-3rem);
+    }
+}
+
+.dot-container{
+    width: 15rem;
+    /* margin: 20px auto 0 auto; */
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+}
+
+button{
+    outline: none;
+    cursor: pointer;
+}
+
+.dot-container button{
+    height: 1.5rem;
+    width: 1.5rem;
+    border-radius: 50%;
+    border: .2rem solid var(--dark-green);
+    background-color: transparent;
+    /*Position is set to relative because we want to set our dots on the top of an image and bottom 25px is set to move 25px upward relative to the parent container(imageslider-container)*/
+    position: relative;
+    bottom: 2.5rem;
+}
+
+#prev,#next{
+    height: 4rem;
+    width: 4rem;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    bottom: 0;
+    border: none;
+    font-size: 1.8rem;
+    font-weight: bolder;
+    background-color: #bfff5d;
+    color: green;
+    border: .2rem solid green;
+    border-radius: 50%;
+    opacity: 0.8;
+}
+
+#prev{
+    left: 1.5rem;
+}
+
+#next{
+    right: 1.5rem;
+}
+
+#prev:hover,#next:hover{
+    background-color: white;
+}
+
+@media(max-width:550px){
+    .imageslider-container .slide.active{
+        flex-direction: column;
+    }
+
+    .imageslider-container .slide.active .content{
+        margin-bottom: 6rem;
+    }
+
+    .imageslider-container .slide .content {
+        width: 100%;
+        margin-top: 3rem;
+    }
+
+    /* .imageslider-container .slide .imgforslider{
+        width: 100%;
+        padding-right: 8rem;
+    } */
+}
+
+@media(max-width:510px){
+    .imageslider-container .slide .content {
+        padding-left: 4rem;
+    }
+}
